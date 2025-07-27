@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/martian-mono" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="team-a">
+            <h1>H O M E </h1>
+            <h2 class="score" id="home-score">00</h2>
+            <div class="buttons-score">
+                <button  onclick="increaseScore('home', 1)">+1</button>
+                <button  onclick="increaseScore('home', 2)">+2</button>
+                <button  onclick="increaseScore('home', 3)">+3</button>
+            </div>
+        </div>
+        <div class="time">
+            <h3 class="time-text">T I M E</h3>
+            <h2 class="time-number" id="timer">00:00</h2>
+        </div>
+        <div class="buttons-function">
+               <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button>
+    <button onclick="resetTimer()">Reset Timer</button>
+    <button onclick="resetScore()">Reset Score</button>
+        </div>
+        <div class="team-b">
+            <h1>A W A Y</h1>
+              <h2 class="score" id="away-score">00</h2>
+            <div class="buttons-score">
+                <button onclick="increaseScore('away', 1)">+1</button>
+                <button onclick="increaseScore('away', 2)">+2</button>
+                <button onclick="increaseScore('away', 3)">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
